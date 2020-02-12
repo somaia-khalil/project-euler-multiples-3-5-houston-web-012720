@@ -1,5 +1,4 @@
-require_relative 'oo_multiples'
-require 'pry'
+
 # Enter your procedural solution here!
 ​
 def collect_multiples(limit)
