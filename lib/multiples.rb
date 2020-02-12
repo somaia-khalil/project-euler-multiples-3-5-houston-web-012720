@@ -1,4 +1,4 @@
-require_relative 'multiples'
+
 ​
 class Multiples
 ​
