@@ -1,30 +1,34 @@
-# Enter your object-oriented solution here!
-require_relative 'multiples'
+require_relative 'oo_multiples'
+require 'pry'
+# Enter your procedural solution here!
 ​
-class Multiples
+def collect_multiples(limit)
+    
+    # ==========================================
+    # Using the class methods
+    # ------------------------------------------
+    # Multiples.new(end_num).collect_multiples
+    
 ​
-    attr_accessor :limit
-​
-    def initialize(limit)
-        @limit = limit
-    end
-​
-    # def collect_multiples
-    #     collect_multiples(@limit)
+    # ==========================================
+    # more verbose, using each and local variable
+    # ------------------------------------------
+    # range = 1...end_num
+    # passing_numbers = []
+    # range.each do |num|
+    #     if num % 3 == 0 || num % 5 == 0
+    #         passing_numbers << num
+    #     end
     # end
+    # passing_numbers
 ​
-    def collect_multiples
-        range = 1...@limit
-        passing_numbers = []
-        range.each do |num|
-            if num % 3 == 0 || num % 5 == 0
-                passing_numbers << num
-            end
-        passing_numbers
-    end
+    
+    # ==========================================
+    # cleanest, using select
+    # ------------------------------------------
+    (1...limit).select{|i| i % 3 == 0 || i % 5 == 0}
+end
 ​
-    def sum_multiples
-        collect_multiples.sum
-    end
-​
+def sum_multiples(limit)
+    collect_multiples(limit).sum
 end
