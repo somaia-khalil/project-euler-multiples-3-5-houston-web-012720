@@ -1,17 +1,17 @@
 
-​
+
 class Multiples
-​
+
     attr_accessor :limit
-​
+
     def initialize(limit)
         @limit = limit
     end
-​
+
     # def collect_multiples
     #     collect_multiples(@limit)
     # end
-​
+
     def collect_multiples
         range = 1...@limit
         passing_numbers = []
@@ -22,9 +22,9 @@ class Multiples
         end
         passing_numbers
     end
-​
+
     def sum_multiples
         collect_multiples.sum
     end
-​
+
 end
