@@ -20,7 +20,6 @@ class Multiples
             if num % 3 == 0 || num % 5 == 0
                 passing_numbers << num
             end
-        end
         passing_numbers
     end
 ​
