@@ -1,6 +1,6 @@
 
 # Enter your procedural solution here!
-​
+
 def collect_multiples(limit)
     
     # ==========================================
@@ -8,7 +8,7 @@ def collect_multiples(limit)
     # ------------------------------------------
     # Multiples.new(end_num).collect_multiples
     
-​
+
     # ==========================================
     # more verbose, using each and local variable
     # ------------------------------------------
@@ -20,14 +20,14 @@ def collect_multiples(limit)
     #     end
     # end
     # passing_numbers
-​
+
     
     # ==========================================
     # cleanest, using select
     # ------------------------------------------
     (1...limit).select{|i| i % 3 == 0 || i % 5 == 0}
 end
-​
+
 def sum_multiples(limit)
     collect_multiples(limit).sum
 end
